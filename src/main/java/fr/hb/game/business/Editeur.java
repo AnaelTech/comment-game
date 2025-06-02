@@ -6,10 +6,12 @@ public class Editeur {
     private Long id;
 
     private String nom;
+
+    private String logo;
     
     private static Long counter = 0L;
    
-  public Editeur(String nom) {
+  public Editeur(String nom, String logo) {
     id = ++counter;
     this.nom = nom;
   }
@@ -24,5 +26,21 @@ public class Editeur {
 
   public String getNom(){
     return nom;
+  }
+
+  public void setLogo(String logo) {
+    this.logo = logo;
+  }
+
+  public String getLogo() {
+    return logo;
+  }
+  
+  public String toString() {
+    return "Editeur{" +
+            "id=" + id +
+            ", nom='" + nom + '\'' +
+            ", logo='" + logo + '\'' +
+            '}';
   }
 }
