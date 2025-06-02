@@ -6,8 +6,8 @@ public class Joueur extends Utilisateur {
   
   private LocalDate dateNaissance;
   
-  public Joueur(String pseudo, String motDePasse, String email, LocalDate dateNaissance) {
-    super(pseudo, motDePasse, email);
+  public Joueur(String pseudo, String motDePasse, String email, LocalDate dateNaissance, Avatar avatar) {
+    super(pseudo, motDePasse, email, avatar);
     this.dateNaissance = dateNaissance;
   }
 

@@ -10,9 +10,13 @@ public class Editeur {
     private String logo;
     
     private static Long counter = 0L;
-   
-  public Editeur(String nom, String logo) {
+  
+  public Editeur() {
     id = ++counter;
+  }
+
+  public Editeur(String nom, String logo) {
+    this();
     this.nom = nom;
   }
 
