@@ -88,7 +88,26 @@ public class Jeu {
   public void setPlateforms(List<Plateform> plateforms) {
     this.plateforms = plateforms;
   }
+  
+  @Override
+  public int hashCode() {
+    final int prime = 31;
+    int result = 1;
+    result = prime * result + ((nom == null) ? 0 : nom.hashCode());
+    result = prime * result + ((dateSortie == null) ? 0 : dateSortie.hashCode());
+    return result;
+  }
 
+  public boolean equals(Object obj) {
+    if (this == obj) return true;
+    if (obj == null || getClass() != obj.getClass()) return false;
+    Jeu jeu = (Jeu) obj;
+    if (nom != null ? !nom.equals(jeu.nom) : jeu.nom != null) return false;
+    return dateSortie != null ? dateSortie.equals(jeu.dateSortie) : jeu.dateSortie == null;
+  }
+
+
+  @Override
   public String toString() {
     return "Jeu{" +
             "id=" + id +

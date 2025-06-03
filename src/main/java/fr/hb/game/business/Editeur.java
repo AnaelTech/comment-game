@@ -51,7 +51,41 @@ public class Editeur {
   public void setJeux(List<Jeu> jeux) {
     this.jeux = jeux;
   }
+  
+  
 
+  @Override
+  public int hashCode() {
+    final int prime = 31;
+    int result = 1;
+    result = prime * result + ((nom == null) ? 0 : nom.hashCode());
+    result = prime * result + ((logo == null) ? 0 : logo.hashCode());
+    return result;
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
+    Editeur other = (Editeur) obj;
+    if (nom == null) {
+      if (other.nom != null)
+        return false;
+    } else if (!nom.equals(other.nom))
+      return false;
+    if (logo == null) {
+      if (other.logo != null)
+        return false;
+    } else if (!logo.equals(other.logo))
+      return false;
+    return true;
+  }
+
+  @Override
   public String toString() {
     return "Editeur{" +
             "id=" + id +
