@@ -1,6 +1,6 @@
 package fr.hb.game.business;
 
-
+// Hérite de Object 
 public abstract class Utilisateur {
 
   private Long id;

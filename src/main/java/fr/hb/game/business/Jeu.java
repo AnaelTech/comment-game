@@ -14,6 +14,7 @@ public class Jeu {
   private static Long counter = 0L;
   private List<Avis> avisList = new ArrayList<>();
   private Editeur editeur;
+  private List<Plateform> plateforms = new ArrayList<>();
 
   public Jeu(){
     this.id = ++counter;
@@ -78,6 +79,14 @@ public class Jeu {
 
   public void setEditeur(Editeur editeur) {
     this.editeur = editeur;
+  }
+  
+  public List<Plateform> getPlateforms() {
+    return plateforms;
+  }
+
+  public void setPlateforms(List<Plateform> plateforms) {
+    this.plateforms = plateforms;
   }
 
   public String toString() {

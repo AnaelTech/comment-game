@@ -1,0 +1,49 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'21'
+-sourcepath
+'/home/anaeltech/Learn/Java/comment-game/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'comment-game 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'comment-game 1.0-SNAPSHOT API'
+fr.hb.game.business
+fr.hb.game
+/home/anaeltech/Learn/Java/comment-game/src/main/java = 1748416701152
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/copy.svg = 1748935003818
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/package-search-index.js = 1748935003791
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/search-page.js = 1748935003820
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/index.html = 1748935003776
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/tag-search-index.js = 1748935003792
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/type-search-index.js = 1748935003791
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/search.html = 1748935003812
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/script.js = 1748935003818
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/overview-summary.html = 1748935003814
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/allclasses-index.html = 1748935003789
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/help-doc.html = 1748935003816
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/stylesheet.css = 1748935003817
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/overview-tree.html = 1748935003774
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/member-search-index.js = 1748935003792
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/search.js = 1748935003819
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/element-list = 1748935003730
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/module-search-index.js = 1748935003791
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/index-all.html = 1748935003810
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/link.svg = 1748935003818
+/home/anaeltech/Learn/Java/comment-game/target/reports/apidocs/allpackages-index.html = 1748935003790

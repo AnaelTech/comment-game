@@ -5,8 +5,7 @@ public class Plateform {
 
     private Long id;
     private String name;
-    private static Long counter = 0L;
- 
+    private static Long counter = 0L; 
 
     public Plateform(int id) {
         this.id = ++counter;
