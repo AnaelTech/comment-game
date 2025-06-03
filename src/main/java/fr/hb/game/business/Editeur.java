@@ -16,12 +16,13 @@ public class Editeur implements Comparable<Editeur> {
     private List<Jeu> jeux = new ArrayList<>();
   
   public Editeur() {
-    id = ++counter;
+    this.id = ++counter;
   }
 
   public Editeur(String nom, String logo) {
     this();
     this.nom = nom;
+    this.logo = logo;
   }
 
   public Long getId() {

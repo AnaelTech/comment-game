@@ -7,11 +7,12 @@ public class Plateform implements Comparable<Plateform> {
     private String name;
     private static Long counter = 0L; 
 
-    public Plateform(int id) {
+    public Plateform() {
         this.id = ++counter;
     }
 
     public Plateform(String name) {
+        this();
         this.name = name;
     }
 
