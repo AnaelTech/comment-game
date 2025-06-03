@@ -1,6 +1,8 @@
 package fr.hb.game.business;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Jeu {
 
@@ -10,6 +12,7 @@ public class Jeu {
   private String description;
   private boolean possedeImage;
   private static Long counter = 0L;
+  private List<Avis> avisList = new ArrayList<>();
 
   public Jeu(){
     this.id = ++counter;
@@ -59,6 +62,14 @@ public class Jeu {
   public void setPossedeImage(boolean possedeImage) {
     this.possedeImage = possedeImage;
   }
+  
+  public List<Avis> getAvisList() {
+    return avisList;
+  }
+
+  public void setAvisList(List<Avis> avisList) {
+    this.avisList = avisList;
+  }
 
   public String toString() {
     return "Jeu{" +
@@ -67,6 +78,7 @@ public class Jeu {
             ", dateSortie=" + dateSortie +
             ", description='" + description + '\'' +
             ", possedeImage=" + possedeImage +
+            ", avisList=" + avisList +
             '}';
   }
 
