@@ -13,6 +13,7 @@ public class Jeu {
   private boolean possedeImage;
   private static Long counter = 0L;
   private List<Avis> avisList = new ArrayList<>();
+  private Editeur editeur;
 
   public Jeu(){
     this.id = ++counter;
@@ -69,6 +70,14 @@ public class Jeu {
 
   public void setAvisList(List<Avis> avisList) {
     this.avisList = avisList;
+  }
+  
+  public Editeur getEditeur() {
+    return editeur;
+  }
+
+  public void setEditeur(Editeur editeur) {
+    this.editeur = editeur;
   }
 
   public String toString() {

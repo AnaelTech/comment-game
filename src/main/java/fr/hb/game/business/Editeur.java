@@ -1,5 +1,7 @@
 package fr.hb.game.business;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Editeur {
 
@@ -10,6 +12,8 @@ public class Editeur {
     private String logo;
     
     private static Long counter = 0L;
+
+    private List<Jeu> jeux = new ArrayList<>();
   
   public Editeur() {
     id = ++counter;
@@ -40,6 +44,14 @@ public class Editeur {
     return logo;
   }
   
+  public List<Jeu> getJeux() {
+    return jeux;
+  }
+
+  public void setJeux(List<Jeu> jeux) {
+    this.jeux = jeux;
+  }
+
   public String toString() {
     return "Editeur{" +
             "id=" + id +
