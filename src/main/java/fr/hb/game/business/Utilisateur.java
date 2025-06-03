@@ -57,7 +57,30 @@ public abstract class Utilisateur {
   public void setAvatar(Avatar avatar) {
     this.avatar = avatar;
   }
+  
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof Utilisateur)) return false;
 
+    Utilisateur that = (Utilisateur) o;
+
+    if (!id.equals(that.id)) return false;
+    if (!pseudo.equals(that.pseudo)) return false;
+    if (!motDePasse.equals(that.motDePasse)) return false;
+    return email.equals(that.email);
+  }
+
+  @Override
+  public int hashCode() {
+    int result = id.hashCode();
+    result = 31 * result + pseudo.hashCode();
+    result = 31 * result + motDePasse.hashCode();
+    result = 31 * result + email.hashCode();
+    return result;
+  }
+
+  @Override
   public String toString() {
     return "Utilisateur{" +
             "id=" + id +

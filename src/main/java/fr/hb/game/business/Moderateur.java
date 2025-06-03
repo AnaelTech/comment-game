@@ -28,7 +28,26 @@ public class Moderateur extends Utilisateur {
   public void setAvisList(List<Avis> avisList) {
     this.avisList = avisList;
   }
+ 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof Moderateur)) return false;
+    if (!super.equals(o)) return false;
 
+    Moderateur that = (Moderateur) o;
+
+    return numeroDeTelephone != null ? numeroDeTelephone.equals(that.numeroDeTelephone) : that.numeroDeTelephone == null;
+  }
+
+  @Override
+  public int hashCode() {
+    int result = super.hashCode();
+    result = 31 * result + (numeroDeTelephone != null ? numeroDeTelephone.hashCode() : 0);
+    return result;
+  }
+
+  @Override
   public String toString() {
     return "Moderateur{" +
             "id=" + getId() +

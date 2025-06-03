@@ -29,6 +29,25 @@ public class Joueur extends Utilisateur {
   public void setAvisList(List<Avis> avisList) {
     this.avisList = avisList;
   }
+  
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof Joueur)) return false;
+    if (!super.equals(o)) return false;
+
+    Joueur joueur = (Joueur) o;
+
+    return dateNaissance != null ? dateNaissance.equals(joueur.dateNaissance) : joueur.dateNaissance == null;
+
+  }
+
+  @Override
+  public int hashCode() {
+    int result = super.hashCode();
+    result = 31 * result + (dateNaissance != null ? dateNaissance.hashCode() : 0);
+    return result;
+  }
 
   @Override
   public String toString() {
