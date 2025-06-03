@@ -3,7 +3,7 @@ package fr.hb.game.business;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Editeur {
+public class Editeur implements Comparable<Editeur> {
 
     private Long id;
 
@@ -84,6 +84,19 @@ public class Editeur {
       return false;
     return true;
   }
+  
+  /**
+   * On montre a java comment comparer deux objets editeur : 
+   * L'objet this et l'objet autreEditeur
+   *@param object arg0
+   *On decide de comparer les noms des editeurs
+   *@return
+  */
+
+  @Override
+  public int compareTo(Editeur autreEditeur) {
+      return this.nom.compareTo(autreEditeur.nom);
+  }
 
   @Override
   public String toString() {
@@ -93,4 +106,5 @@ public class Editeur {
             ", logo='" + logo + '\'' +
             '}';
   }
+
 }

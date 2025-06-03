@@ -1,7 +1,7 @@
 package fr.hb.game.business;
 
 
-public class Plateform {
+public class Plateform implements Comparable<Plateform> {
 
     private Long id;
     private String name;
@@ -42,6 +42,11 @@ public class Plateform {
     }
     
 
+     @Override
+    public int compareTo(Plateform arg0) {
+      return this.name.compareTo(arg0.name);
+    }
+    
     @Override
     public String toString() {
         return "Plateform{" +
@@ -49,4 +54,5 @@ public class Plateform {
                 ", name='" + name + '\'' +
                 '}';
     }
-}
+
+   }
